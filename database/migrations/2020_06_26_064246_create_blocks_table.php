@@ -18,6 +18,7 @@ class CreateBlocksTable extends Migration
             $table->string('text');
             $table->bigInteger('position');
             $table->boolean('active');
+            $table->string('bg_color');
             $table->timestamps();
         });
     }

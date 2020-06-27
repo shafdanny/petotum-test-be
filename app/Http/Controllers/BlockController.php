@@ -30,8 +30,7 @@ class BlockController extends Controller
         foreach ($data as $key => $value) {
             DB::table('blocks')
             ->where('position', $value['position'])
-            ->update(['text' => $value['text'], 'active'=> $value['active']]);
-            //return $value;
+            ->update(['text' => $value['text'], 'active'=> $value['active'], 'bg_color'=> $value['bg_color']]);
         }
         
         return $request;
